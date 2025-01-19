@@ -30,7 +30,7 @@ export default function Modal() {
                 <CloseIcon onClick={handleToggleDrawer} style={{ cursor: 'pointer' }} />
             </Box>
 
-            {currentChangeItem ?
+            {currentChangeItem.name ?
                 <Typography sx={{ marginTop: '30px' }} variant="h4">{currentChangeItem.name}</Typography> :
                 <Typography sx={{ marginTop: '30px' }} variant="h4">Новая позиция</Typography>
             }
@@ -64,7 +64,7 @@ export default function Modal() {
                     Отмена
                 </Button>
                 <Button
-                    onClick={currentChangeItem ? () => handleChangeItem(currentChangeItem) : handleCreateItem}
+                    onClick={currentChangeItem.name ? () => handleChangeItem(currentChangeItem) : handleCreateItem}
                     sx={{
                         backgroundColor: 'rgba(168, 87, 87, 1)',
                         color: 'white',

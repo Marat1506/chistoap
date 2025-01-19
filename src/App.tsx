@@ -20,9 +20,6 @@ function App() {
 
       <Modal />
       </Provider>
-
-     
-  
     </Box>
   )
 }
