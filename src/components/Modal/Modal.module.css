@@ -1,0 +1,31 @@
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; 
+    margin-top: 20px;
+}
+
+.bottom {
+    position: absolute; 
+    bottom: 15px; 
+    left: 15px; 
+    right: 15px; 
+    display: flex;
+    justify-content: space-between; 
+}

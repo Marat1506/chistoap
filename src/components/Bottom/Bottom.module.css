@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+    gap: 8px; 
+}
