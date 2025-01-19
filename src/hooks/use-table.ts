@@ -1,8 +1,8 @@
 import { useEffect } from "react"
-import { Item } from "../components/Table/Table"
 import { getItems } from "../request/request"
 import { setItems, toggleDrawer, changeCurrentItem } from "../store/reducer"
 import { useAppSelector, useAppDispatch } from "./use-redux-types"
+import { Item } from "../store/types"
 
 
 export default function useTable() {

@@ -1,27 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit"
-interface Item {
-    name: string;
-    measurement_units: string;
-    code: string;
+import { initialStateType } from "./types";
 
 
-}
-interface initialState {
-    currentPage: number;
-    currentPageSize: number;
-    items: Item[];
-    isModalOpen: boolean;
-    currentChangeItem: {
-        id: string;
-        name: string;
-        measurement_units: string;
-        code: string;
-        description: string;
-    }
 
-}
 
-const initialState: initialState = {
+const initialState: initialStateType = {
     currentPage: 1,
     currentPageSize: 20,
     items: [],

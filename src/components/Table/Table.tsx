@@ -12,13 +12,7 @@ import { Button } from '@mui/material';
 import useTable from '../../hooks/use-table';
 
 
-export interface Item {
-    id?: string;
-    name: string;
-    measurement_units: string;
-    code: string;
 
-}
 
 export default function Table() {
     const {items, handleChangeItem} = useTable()
